@@ -1,1 +1,4 @@
 # Twitter-Sentiment-analysis
+we are going to set a system to evaluate in real time the sentiment of all Tweets made with a specific Twitter hashtag.
+We are going to use a basic Python script to obtain real time Tweets thanks to the Twitter API, from the script we’ll put the Tweets directly in a Kinesis Firehose delivery stream where we have a transformation Lambda function, in that moment we are going to obtain the sentiment information using Amazon Comprehend and obtain a clean Twitter comment, finally the Tweet and its sentiment data will be stored in an Elasticsearch domain where we can see real time information using custom charts.
+Twitter API First we’ll need credentials to access the Twitter API so if you don’t have them this is where you can start: https://apps.twitter.com/ Or we can download sample datasets of tweets.
